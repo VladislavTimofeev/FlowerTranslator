@@ -12,14 +12,14 @@ import java.util.Scanner;
  * //Вывод объекта через sout/
  */
 public class Main {
-    private static Scanner scanner = new Scanner(System.in);
+    private Scanner scanner = new Scanner(System.in);
     private static Random random = new Random();
 
     public static void main(String[] args) {
         // write your code here
 
         System.out.println("Введите строку: ");
-        String colorRussia = readLine();
+        String colorRussia = new Main().readLine();
 
         FlowerItem flowerItem;
 
@@ -39,7 +39,7 @@ public class Main {
         System.out.println(flowerItem);
     }
 
-    public static String readLine() {
+    public String readLine() {
         return scanner.nextLine();
     }
 
